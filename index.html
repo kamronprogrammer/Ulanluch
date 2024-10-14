@@ -21,6 +21,7 @@
 			<div class="header__btn">
 				<a href="#">Sig Up</a>
 			</div>
+			<img src="./image/sun.png" id="icon" />
 		</div>
 		<div class="banner">
 			<h1 class="banner__title">
@@ -148,9 +149,9 @@
 				<img src="./image/toogether.png" alt="" />
 			</div>
 		</div>
-		<div  id="3" class="cards">
+		<div id="3" class="cards">
 			<div class="cards__title">
-				<h1 >Unlike any coding tool<br />you've ever encountered</h1>
+				<h1>Unlike any coding tool<br />you've ever encountered</h1>
 				<p>
 					Actually, we're not so different from other coding platforms.<br />But
 					with AI, do you catch our drift? Exactly, that's the point.
@@ -239,23 +240,23 @@
 					<p>Playground</p>
 					<h1>Free for everyone</h1>
 					<hr />
-					<div class="price__main-plus">
+					<div class="price__main-plus1">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>Unlimited Members</p>
 					</div>
-					<div class="price__main-plus">
+					<div class="price__main-plus1">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>2 Collaboration Project Team</p>
 					</div>
-					<div class="price__main-plus">
+					<div class="price__main-plus1">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>100 AI Messages (GPT 3.5)</p>
 					</div>
-					<div class="price__main-plus">
+					<div class="price__main-plus1">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>Individual Space</p>
 					</div>
-					<div class="price__main-plus">
+					<div class="price__main-plus1">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>Global Library</p>
 					</div>
@@ -269,23 +270,23 @@
 						<p>Best for startups, etc.</p>
 					</div>
 					<hr />
-					<div class="price__main-plus">
+					<div class="price__main-plus2">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>Unlimited Members</p>
 					</div>
-					<div class="price__main-plus">
+					<div class="price__main-plus2">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>2 Collaboration Project Team</p>
 					</div>
-					<div class="price__main-plus">
+					<div class="price__main-plus2">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>100 AI Messages (GPT 3.5)</p>
 					</div>
-					<div class="price__main-plus">
+					<div class="price__main-plus2">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>Individual Space</p>
 					</div>
-					<div class="price__main-plus">
+					<div class="price__main-plus2">
 						<img src="./image/checkmark.svg" alt="" />
 						<p>Global Library</p>
 					</div>
@@ -295,7 +296,7 @@
 		</div>
 		<div id="2" class="footer">
 			<div class="footer__info">
-				<h1>Features like collaboration, <Br>code explainers and more</h1>
+				<h1>Features like collaboration, <br />code explainers and more</h1>
 				<p>
 					Whether you're part of a team or an individual, Glitty helps you
 					supercharge your code seamlessly.
@@ -335,5 +336,18 @@
 			</div>
 		</div>
 		<p class="last">Copyright © 2024 Designluch</p>
+		<script>
+			var icon = document.getElementById("icon")
+
+
+			icon.onclick = function() {
+			      document.body.classList.toggle('light-theme');
+			      if(document.body.classList.contains('light-theme')) {
+			            icon.src = "image/moon.png";
+			      } else {
+			            icon.src = "image/sun.png";
+			      }
+			}
+		</script>
 	</body>
 </html>
