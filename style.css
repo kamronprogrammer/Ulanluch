@@ -15,19 +15,20 @@
 :root {
 	--secondary-color: #fefefe;
 	--primary-color: #131718;
-	
+	--text-color: #fff;
 }
 
 .light-theme {
 	--secondary-color: #131718;
-	--primary-color: #fefefe;
+	--primary-color: #e5e9ea;
+	--text-color: #fff;
+	filter: invert(100%) hue-rotate(180deg);
 }
 
 #icon {
 	width: 30px;
 	cursor: pointer;
 }
-
 
 body {
 	background: var(--primary-color);
@@ -42,13 +43,11 @@ html {
 	justify-content: space-around;
 	align-items: center;
 	padding: 30px;
-	color: var(--secondary-color);
-	background: var(--primary-color);
 }
 
 .header__logo h1 {
 	cursor: pointer;
-	color: var(--secondary-color);
+	color: #fff;
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 600;
@@ -65,7 +64,7 @@ html {
 }
 
 .header__menu a {
-	color: var(--secondary-color);
+	color: #fff;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 600;
@@ -106,7 +105,7 @@ html {
 .header__btn a:hover {
 	color: #0092f7;
 	background: #fefefe;
-	box-shadow: 0px 0px 10px 0px var(--secondary-color);
+	box-shadow: 0px 0px 10px 0px #c9c9c9;
 	transform: scale(1.1);
 	transition: 0.5s;
 }
@@ -123,8 +122,7 @@ html {
 }
 
 .banner__title {
-	color: var(--secondary-color);
-	color: var(--secondary-color);
+	color: #Fff;
 	text-align: center;
 	font-size: 64px;
 	font-style: normal;
@@ -167,22 +165,23 @@ html {
 .banner__btn-one:hover {
 	color: #0092f7;
 	background: #fefefe;
-	box-shadow: 0px 0px 10px 0px var(--secondary-color);
+	box-shadow: 0px 0px 10px 0px #fff;
 	transition: 0.5s;
 }
 
 .banner__btn-two {
-	color: var(--secondary-color);
+	color: #fff;
 	padding: 15px 32px;
 	background: transparent;
 	border-radius: 50px;
-	border: 2px solid var(--secondary-color);
+	border: 2px solid #Fff;
 	transition: 0.3s;
 }
 
 .banner__btn-two:hover {
-	color: var(--primary-color);
-	background: var(--secondary-color);
+	color: #000;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px #c9c9c9;
 	transition: 0.5s;
 }
 
@@ -375,7 +374,7 @@ html {
 }
 
 .cards__main-four {
-		background: var(--Dark-Level-2, #222627);
+	background: var(--Dark-Level-2, #222627);
 
 	border-radius: 20px;
 	padding: 40px;
@@ -562,7 +561,7 @@ html {
 }
 
 .price__main-one h1 {
-	color: var(--primary-color);
+	color: #fff;
 	text-align: center;
 	font-size: 28px;
 	font-style: normal;
@@ -581,7 +580,8 @@ html {
 }
 
 .price__main-one-btn {
-	color: var(--primary-color);
+		color: #fff;
+
 	padding: 15px 32px;
 	background: transparent;
 	border-radius: 50px;
@@ -610,19 +610,16 @@ html {
 	margin-bottom: 30px;
 }
 
-
-
-
 .price__main-plus1 p {
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 24px; /* 150% */
 	letter-spacing: -0.48px;
-	color: var(--primary-color);
+		color: #fff;
+
 	/* margin-top: 10px; */
 }
-
 
 .price__main-plus2 {
 	display: flex;
@@ -635,14 +632,14 @@ html {
 	margin-bottom: 30px;
 }
 
-
 .price__main-plus2 p {
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 24px; /* 150% */
 	letter-spacing: -0.48px;
-	color: var(--secondary-color);
+	color: #fff;
+
 	/* margin-top: 10px; */
 }
 
@@ -681,7 +678,7 @@ html {
 }
 
 .price__main-two h1 {
-	color: var(--secondary-color);
+	color: #fff;
 	text-align: center;
 	font-size: 28px;
 	font-style: normal;
@@ -734,7 +731,7 @@ html {
 }
 
 .footer__info {
-	color: var(--secondary-color);
+	color: #Fff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -747,10 +744,12 @@ html {
 	font-weight: 700;
 	line-height: 56px; /* 116.667% */
 	letter-spacing: -1.44px;
+	color: #Fff;
 }
 
 .footer__info p {
-	color: var(--secondary-color);
+		color: #fff;
+
 	font-size: 17px;
 	font-style: normal;
 	font-weight: 400;
@@ -765,7 +764,7 @@ html {
 }
 
 .footer__info-btn a {
-	color: #Fff;
+	color: #fff;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 600;
@@ -795,14 +794,14 @@ html {
 .footer__info-btn a:last-child {
 	padding: 10px 32px;
 	border-radius: 50px;
-	color: var(--secondary-color);
-	border: 1px solid var(--secondary-color);
+	color: #Fff;
+	border: 1px solid #fff;
 	transition: 0.5s;
 }
 
 .footer__info-btn a:last-child:hover {
-	color: var(--primary-color);
-	background: var(--secondary-color);
+	color: #000;
+	background: #fff;
 	box-shadow: 0px 0px 10px 0px #c9c9c9;
 	transition: 0.5s;
 }
@@ -811,7 +810,7 @@ html {
 	display: flex;
 	justify-content: space-between;
 	padding: 65px 8%;
-	color: var(--secondary-color);
+	color: #FFf;
 }
 
 .finish__info {
@@ -833,7 +832,7 @@ html {
 }
 
 .finish__info p {
-	color: var(--secondary-color);
+	color: #Fff;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
@@ -846,7 +845,7 @@ html {
 .last {
 	text-align: center;
 	padding: 20px 0px;
-	color: var(--secondary-color);
+	color: #fff;
 	text-align: center;
 	font-family: Inter;
 	font-size: 14px;
